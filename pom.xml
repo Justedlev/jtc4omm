@@ -3,19 +3,39 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>io.github.justedlev</groupId>
     <artifactId>jtc4omm</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <description>Java type converters for org.modelmapper</description>
-
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <package-name>dev.justedlev.jtc4omm</package-name>
     </properties>
-
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/justedlev/jtc4omm/issues</url>
+    </issueManagement>
+    <developers>
+        <developer>
+            <name>Justedlev</name>
+            <email>jvstedlev@gmail.com</email>
+            <url>https://github.com/Justedlev</url>
+            <timezone>Asia/Jerusalem</timezone>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git://github.com/justedlev/jtc4omm.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/justedlev/jtc4omm.git</developerConnection>
+        <url>https://github.com/justedlev/jtc4omm</url>
+    </scm>
     <dependencies>
         <dependency>
             <groupId>org.modelmapper</groupId>
@@ -35,14 +55,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <developers>
-        <developer>
-            <id>justedlev</id>
-            <name>Edward L.</name>
-            <email>jvstedlev@gmail.com</email>
-            <url>https://github.com/Justedlev</url>
-            <timezone>Asia/Jerusalem</timezone>
-        </developer>
-    </developers>
 </project>
