@@ -1,6 +1,5 @@
 package dev.justedlev.jtc4omm;
 
-import lombok.*;
 import org.modelmapper.Converter;
 import org.modelmapper.spi.MappingContext;
 
@@ -19,9 +18,19 @@ import java.util.Optional;
  * @author Edward Lukashevits
  * @since 1.0
  */
-@RequiredArgsConstructor
 public class LocalDate2Timestamp implements Converter<LocalDate, Timestamp> {
-    private final LocalTime time = LocalTime.MIN;
+    private final LocalTime time;
+
+    /**
+     * Create new instance using the {@link LocalTime#MIN}
+     */
+    public LocalDate2Timestamp() {
+        this(LocalTime.MIN);
+    }
+
+    public LocalDate2Timestamp(LocalTime time) {
+        this.time = time;
+    }
 
     @Override
     public Timestamp convert(MappingContext<LocalDate, Timestamp> context) {

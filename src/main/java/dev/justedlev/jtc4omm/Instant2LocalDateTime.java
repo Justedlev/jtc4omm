@@ -1,6 +1,5 @@
 package dev.justedlev.jtc4omm;
 
-import lombok.RequiredArgsConstructor;
 import org.modelmapper.Converter;
 import org.modelmapper.spi.MappingContext;
 
@@ -18,9 +17,19 @@ import java.util.Optional;
  * @author Edward Lukashevits
  * @since 1.0
  */
-@RequiredArgsConstructor
 public class Instant2LocalDateTime implements Converter<Instant, LocalDateTime> {
-    private final ZoneId zoneId = ZoneId.systemDefault();
+    private final ZoneId zoneId;
+
+    /**
+     * Create new instance using the {@link ZoneId#systemDefault()}
+     */
+    public Instant2LocalDateTime() {
+        this(ZoneId.systemDefault());
+    }
+
+    public Instant2LocalDateTime(ZoneId zoneId) {
+        this.zoneId = zoneId;
+    }
 
     @Override
     public LocalDateTime convert(MappingContext<Instant, LocalDateTime> mappingContext) {

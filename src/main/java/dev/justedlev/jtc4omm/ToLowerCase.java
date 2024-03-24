@@ -1,6 +1,5 @@
 package dev.justedlev.jtc4omm;
 
-import lombok.RequiredArgsConstructor;
 import org.modelmapper.Converter;
 import org.modelmapper.spi.MappingContext;
 
@@ -17,9 +16,19 @@ import java.util.Optional;
  * @author Edward Lukashevits
  * @since 1.0
  */
-@RequiredArgsConstructor
 public class ToLowerCase implements Converter<String, String> {
-    private final Locale locale = Locale.getDefault();
+    private final Locale locale;
+
+    /**
+     * Create new instance using the {@link Locale#getDefault()}
+     */
+    public ToLowerCase() {
+        this(Locale.getDefault());
+    }
+
+    public ToLowerCase(Locale locale) {
+        this.locale = locale;
+    }
 
     @Override
     public String convert(MappingContext<String, String> context) {
