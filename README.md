@@ -1,4 +1,16 @@
-# 🔃 Java type converters for org.modelmapper
+<div id="header" align="center">
+    <h1>jtc4omm</h1>
+    <h3>🔃 Java type converters for org.modelmapper</h3>
+</div>
+
+<div id="badges" align="center">
+
+[![language](https://img.shields.io/badge/Java%2011-e6892e)](https://github.com/Justedlev/jtc4omm)
+[![license](https://img.shields.io/github/license/Justedlev/jtc4omm)](https://github.com/Justedlev/jtc4omm)
+[![stars](https://img.shields.io/github/stars/Justedlev/jtc4omm)](https://github.com/Justedlev/jtc4omm/star)
+[![issues](https://img.shields.io/github/issues/Justedlev/jtc4omm)](https://github.com/Justedlev/jtc4omm/issues)
+
+</div>
 
 ### 🤔 Why?
 
