@@ -1,6 +1,5 @@
 package dev.justedlev.jtc4omm;
 
-import dev.justedlev.jtc4omm.DateInstant2Timestamp;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -9,8 +8,8 @@ import org.modelmapper.ModelMapper;
 import java.sql.Timestamp;
 import java.util.Date;
 
-class DateInstant2TimestampTest {
-    static DateInstant2Timestamp dateInstant2Timestamp = new DateInstant2Timestamp();
+class Date2TimestampTest {
+    static Date2Timestamp dateInstant2Timestamp = new Date2Timestamp();
     static ModelMapper modelMapper = new ModelMapper();
     Date date = new Date();
 
