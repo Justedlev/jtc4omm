@@ -17,7 +17,7 @@ import java.util.Optional;
  * @author Edward Lukashevits
  * @since 1.0
  */
-public class DateInstant2Timestamp implements Converter<Date, Timestamp> {
+public class Date2Timestamp implements Converter<Date, Timestamp> {
     @Override
     public Timestamp convert(MappingContext<Date, Timestamp> context) {
         return Optional.of(context)

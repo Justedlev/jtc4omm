@@ -19,17 +19,17 @@ import java.util.Optional;
  * @author Edward Lukashevits
  * @since 1.0
  */
-public class DateInstant2LocalDateTime implements Converter<Date, LocalDateTime> {
+public class Date2LocalDateTime implements Converter<Date, LocalDateTime> {
     private final ZoneId zoneId;
 
     /**
      * Create new instance using the {@link ZoneId#systemDefault()}
      */
-    public DateInstant2LocalDateTime() {
+    public Date2LocalDateTime() {
         this(ZoneId.systemDefault());
     }
 
-    public DateInstant2LocalDateTime(ZoneId zoneId) {
+    public Date2LocalDateTime(ZoneId zoneId) {
         this.zoneId = zoneId;
     }
 
