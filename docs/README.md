@@ -41,13 +41,3 @@ What has already been implemented:
 3. String
    - [ToLowerCase](..%2Fsrc%2Fmain%2Fjava%2Fdev%2Fjustedlev%2Fjtc4omm%2FToLowerCase.java)
    - [ToUpperCase](..%2Fsrc%2Fmain%2Fjava%2Fdev%2Fjustedlev%2Fjtc4omm%2FToUpperCase.java)[ToUpperCase](src%2Fmain%2Fjava%2Fdev%2Fjustedlev%2Fjtc4omm%2FToUpperCase.java)
-
-### 🔛 Dependency
-
-``` xml
-<dependency>
-  <groupId>io.github.justedlev</groupId>
-  <artifactId>jtc4omm</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
-</dependency>
-```
