@@ -37,4 +37,8 @@ public class ToLowerCase implements Converter<String, String> {
                 .map(value -> value.toLowerCase(locale))
                 .orElse(null);
     }
+
+    public static ToLowerCase of(Locale locale) {
+        return new ToLowerCase(locale);
+    }
 }

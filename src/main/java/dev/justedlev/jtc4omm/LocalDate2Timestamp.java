@@ -40,4 +40,8 @@ public class LocalDate2Timestamp implements Converter<LocalDate, Timestamp> {
                 .map(Timestamp::valueOf)
                 .orElse(null);
     }
+
+    public static LocalDate2Timestamp of(LocalTime time) {
+        return new LocalDate2Timestamp(time);
+    }
 }

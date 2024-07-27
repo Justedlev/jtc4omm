@@ -38,4 +38,8 @@ public class Instant2LocalDateTime implements Converter<Instant, LocalDateTime> 
                 .map(instant -> LocalDateTime.ofInstant(instant, zoneId))
                 .orElse(null);
     }
+
+    public static Instant2LocalDateTime of(ZoneId zoneId) {
+        return new Instant2LocalDateTime(zoneId);
+    }
 }

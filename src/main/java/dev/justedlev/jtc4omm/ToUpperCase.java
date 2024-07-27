@@ -37,4 +37,8 @@ public class ToUpperCase implements Converter<String, String> {
                 .map(value -> value.toUpperCase(locale))
                 .orElse(null);
     }
+
+    public static ToUpperCase of(Locale locale) {
+        return new ToUpperCase(locale);
+    }
 }

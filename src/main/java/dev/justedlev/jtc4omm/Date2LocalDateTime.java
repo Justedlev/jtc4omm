@@ -41,4 +41,8 @@ public class Date2LocalDateTime implements Converter<Date, LocalDateTime> {
                 .map(instant -> LocalDateTime.ofInstant(instant, zoneId))
                 .orElse(null);
     }
+
+    public static Date2LocalDateTime of(ZoneId zoneId) {
+        return new Date2LocalDateTime(zoneId);
+    }
 }
